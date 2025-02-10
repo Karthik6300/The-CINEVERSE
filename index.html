@@ -10,12 +10,20 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./index.css" />
+    <!-- Toastify CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </head>
   <body>
     <div class="video-container">
       <video autoplay loop muted playsinline>
         <source
-          src="./assests/videos/music For Movie Trailers and Videos - MorningLightMusic (720p, h264) (online-video-cutter.com).mp4"
+          src="./assests/videos/🥀butterfly black screen status🥀 From ATS CREATION ❤️ - ANKAN1011 (720p, h264).mp4"
           type="video/mp4"
         />
         Your browser does not support HTML5 video.
@@ -27,8 +35,8 @@
 
       <!-- Login Form -->
       <form id="signin">
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
+        <input id="mail" type="email" placeholder="User Email" required />
+        <input type="password" placeholder="User Password" required />
         <button type="submit">Login</button>
       </form>
 
@@ -36,16 +44,21 @@
       <form id="signup" style="display: none">
         <input type="text" placeholder="Username" required />
         <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Enter-Password" required />
+        <input
+          id="password2"
+          type="password"
+          placeholder="Re-enter Password"
+          required
+        />
         <button type="submit">Signup</button>
       </form>
-
-      <br />
-      <button style="background-color: blueviolet" id="guest">
-        GUEST MODE
-      </button>
-      <button id="toggle-btn" style="color: blue">
+      <a href="#" id="reset" style="text-decoration: none">forget password ?</a>
+      <button id="toggle-btn" style="color: rgba(232, 255, 104, 0.993)">
         Don't have an account? Sign up
+      </button>
+      <button style="background-color: rgb(184, 97, 4)" id="guest">
+        GUEST MODE
       </button>
     </div>
 

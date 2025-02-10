@@ -1,5 +1,6 @@
 import {
   auth,
+  sendPasswordResetEmail,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "./firebase.js";
@@ -11,20 +12,43 @@ let toggleBtn = document.getElementById("toggle-btn");
 let guest = document.getElementById("guest");
 let formTitle = document.getElementById("form-title");
 
+// Function to Show Toast Notification
+function showToast(message, type = "success") {
+  Toastify({
+    text: message,
+    duration: 5000,
+    gravity: "top", // Position: "top" or "bottom"
+    position: "center", // "left", "center", "right"
+    close: true,
+    style: {
+      background: type === "success" ? "green" : "red",
+      color: "white",
+      borderRadius: "8px",
+      padding: "10px",
+    },
+  }).showToast();
+}
+
 // Signup Form Submission
 signupForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  let email = e.target[1].value; // Changed to get the correct email input
-  let password = e.target[2].value; // Changed to get the correct password input
-
+  // let password2 = document.getElementById("password2");
+  let email = e.target[1].value;
+  let password = e.target[2].value;
+  let password2 = e.target[3].value;
+  if (password !== password2) {
+    showToast("⚠ Passwords do not match! ⚠");
+    return;
+  }
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      alert("User registered successfully!");
+      showToast("⌛ Please wait... Creating account ⌛", "success");
+      showToast("😍 User registered successfully! 😍", "success");
       switchToLogin();
     })
     .catch((error) => {
       console.error(error);
-      alert("Unable to register user");
+      showToast("☠ Please enter valid credentials ☠", "error");
     });
 });
 
@@ -33,15 +57,16 @@ signinForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let email = e.target[0].value;
   let password = e.target[1].value;
+  console.log(email, password);
 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      alert("Login successful!");
-      // Redirect to home page after login
+      showToast("⌛ Please wait... Logging in ⌛", "success");
+      showToast("😍 Login successful! 😍", "success");
       location.assign("./home-page.html");
     })
     .catch((error) => {
-      alert("Invalid credentials");
+      showToast("☠ Invalid Username or Password ☠", "error");
     });
 });
 
@@ -58,6 +83,7 @@ toggleBtn.addEventListener("click", () => {
 
 // Guest Mode Redirection
 guest.addEventListener("click", () => {
+  showToast("👤 Entering Guest Mode...", "success");
   location.assign("./home-page.html");
 });
 
@@ -68,3 +94,20 @@ function switchToLogin() {
   formTitle.innerText = "Login";
   toggleBtn.innerText = "Don't have an account? Sign up";
 }
+
+//forget password
+
+let reset = document.getElementById("reset");
+reset.addEventListener("click", (event) => {
+  event.preventDefault();
+  let email = document.getElementById("mail").value;
+  sendPasswordResetEmail(auth, email)
+    .then(() => {
+      alert("Email Successfully sent");
+    })
+    .catch((error) => {
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
+      alert("Something went wrong, please check !");
+    });
+});
