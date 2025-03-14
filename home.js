@@ -1,6 +1,13 @@
-let sub = document.getElementById("sub");
+// function searchMovie() {
+//   let query = document.getElementById("searchInput").value.trim();
+//   if (query) {
+//     window.location.href = `results.html?query=${encodeURIComponent(query)}`;
+//   }
+// }
 
-sub.addEventListener("click", (event) => {
+let submit = document.getElementById("submit");
+
+submit.addEventListener("click", (event) => {
     event.preventDefault()
   let input = document.getElementById("input").value;
 

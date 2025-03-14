@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
+  </head>
+  <body>
+    <h2>Movie Details</h2>
+    <div id="movieDetails"></div>
+
+    <script>
+      // Function to get URL parameters
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Get the movie title from the URL
+      let movieTitle = getQueryParam("query");
+
+      if (movieTitle) {
+        // Fetch movie details from OMDB API
+        fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=972e8d9b`)
+          .then((response) => response.json())
+          .then((data) => {
+            let movieContainer = document.getElementById("movieDetails");
+
+            if (data.Response === "True") {
+              movieContainer.innerHTML = `
+                            <h3>${data.Title} (${data.Year})</h3>
+                            <img src="${data.Poster}" alt="${data.Title}" width="200">
+                            <p><strong>Genre:</strong> ${data.Genre}</p>
+                            <p><strong>Director:</strong> ${data.Director}</p>
+                            <p><strong>Plot:</strong> ${data.Plot}</p>
+                            <p><strong>IMDB Rating:</strong> ${data.imdbRating}</p>
+                        `;
+            } else {
+              movieContainer.innerHTML = `<p>Movie not found.</p>`;
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching movie details:", error);
+          });
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .container {
+        max-width: 600px;
+        margin-top: 50px;
+      }
+      .card img {
+        max-height: 400px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center mb-4">Movie Search</h2>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="Enter movie title..."
+          aria-label="Movie title"
+        />
+        <button class="btn btn-primary" onclick="searchMovie()">Search</button>
+      </div>
+
+      <div id="movieDetails" class="d-flex justify-content-center"></div>
+    </div>
+
+    <script>
+      // Function to get URL parameters
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Fetch and display movie details
+      function fetchMovie(movieTitle) {
+        if (!movieTitle) return;
+
+        fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=972e8d9b`)
+          .then((response) => response.json())
+          .then((data) => {
+            let movieContainer = document.getElementById("movieDetails");
+
+            if (data.Response === "True") {
+              movieContainer.innerHTML = `
+                        <div class="card shadow-lg" style="width: 100%;">
+                            <img src="${data.Poster}" class="card-img-top" alt="${data.Title}">
+                            <div class="card-body">
+                                <h5 class="card-title">${data.Title} (${data.Year})</h5>
+                                <p class="card-text"><strong>Genre:</strong> ${data.Genre}</p>
+                                <p class="card-text"><strong>Director:</strong> ${data.Director}</p>
+                                <p class="card-text"><strong>Plot:</strong> ${data.Plot}</p>
+                                <p class="card-text"><strong>IMDB Rating:</strong> ⭐ ${data.imdbRating}</p>
+                            </div>
+                        </div>
+                    `;
+            } else {
+              movieContainer.innerHTML = `<div class="alert alert-danger">Movie not found.</div>`;
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching movie details:", error);
+          });
+      }
+
+      // Handle search button click
+      function searchMovie() {
+        const movieTitle = document.getElementById("searchInput").value.trim();
+        if (movieTitle) {
+          window.history.pushState({}, "", `?query=${movieTitle}`);
+          fetchMovie(movieTitle);
+        }
+      }
+
+      // Get movie title from URL and fetch details
+      let movieTitle = getQueryParam("query");
+      if (movieTitle) {
+        document.getElementById("searchInput").value = movieTitle;
+        fetchMovie(movieTitle);
+      }
+    </script>
+  </body>
+</html> -->

@@ -1,18 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif; 
-  }
-body{
-    background-color: black;
-  }
-
-
-/* carosel immages  */
-.carousel img{
-    height: 100vh;
-    /* object-fit: cover; */
-    background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: black;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
 }
 
+/* carosel images  */
+.carousel img {
+  height: 100vh;
+  /* object-fit: cover; */
+  background-size: cover;
+}

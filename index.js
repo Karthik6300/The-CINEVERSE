@@ -83,7 +83,7 @@ toggleBtn.addEventListener("click", () => {
 
 // Guest Mode Redirection
 guest.addEventListener("click", () => {
-  showToast("👤 Entering Guest Mode...", "success");
+  showToast("👤 Entering Guest Mode...", "please wait");
   location.assign("./home-page.html");
 });
 

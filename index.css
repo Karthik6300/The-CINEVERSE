@@ -58,6 +58,9 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+#spantag{
+  color: white;
+}
 /* button:hover {
   background: #efb9b9;
 } */
