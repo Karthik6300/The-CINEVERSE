@@ -1,154 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home-Page</title>
-    <link rel="stylesheet" href="./home.css" />
-    <link
-      rel="shortcut icon"
-      href="./assests/images/wed-icon.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-     <input id="input" type="text" style="display: none;" placeholder="Enter movie name" />
-    <button id="sub" style="display: none;">Submit</button> 
-
-    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <img
-            src="./assests/images/wed-icon.png"
-            width="40px"
-            height="40px"
-            style="border-radius: 20px"
-            alt=""
-          />
-          <a class="navbar-brand" href="#" style="margin-left: 10px"
-            >The Cineverse</a
-          >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              id="input"
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              onclick="searchMovie()"
-              id="submit"
-              class="btn btn-outline-success"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://s3-alpha.figma.com/hub/file/3271720301/85f5595b-9b58-45c2-a189-8354dfc6a3fe-cover.png"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://images7.alphacoders.com/614/614632.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://www.filmyfenil.com/wp-content/uploads/2017/04/Baahubali-wallpaper.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://i.ytimg.com/vi/rcLzTb-SbYg/maxresdefault.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://m.media-amazon.com/images/S/pv-target-images/2329c1b4a6f24fbd6a5bf658f8246b7994b3590ee12d11e0ec20cb7801a935f6.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <script src="./home.js"></script>
-    <script src="./movie_result.js"></script>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -176,7 +25,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style_dup.css" />
   </head>
 
   <body id="top">
@@ -189,7 +37,7 @@
         <div class="overlay" data-overlay></div>
 
         <a href="./index.html" class="logo">
-          <img src="./assets/images/cinema.png" alt=" logo" />
+          <img src="./assets/images/cineama_hindi.png" alt="MovieMate logo" />
         </a>
 
         <div class="header-actions">
@@ -199,23 +47,20 @@
 
           <div class="lang-wrapper">
             <label for="language">
-              <ion-icon name="globe-outline" class="globe"></ion-icon>
+              <ion-icon name="globe-outline"></ion-icon>
             </label>
-
             <div class="dropdown">
-              <button class="dropbtn">Language</button>
+              <button class="dropbtn">भाषा</button>
               <div class="dropdown-content">
                 <a href="./home-page.html">English</a>
                 <a href="./home_hindi.html">हिंदी</a>
-                <a href="#">తెలుగు</a>
+                <a href="#">Telugu</a>
                 <a href="#">Francais</a>
               </div>
             </div>
           </div>
 
-          <a href="./index.html">
-            <button class="btn btn-primary">Login</button></a
-          >
+          <button class="btn btn-primary">लोग इन</button>
         </div>
 
         <button class="menu-open-btn" data-menu-open-btn>
@@ -225,9 +70,11 @@
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
             <a href="./home-page.html" class="logo">
-              <img src="./assets/images/cinema.png" alt=" logo" />
+              <img
+                src="./assets/images/cineama_hindi.png"
+                alt="Moviemate logo"
+              />
             </a>
-
             <button class="menu-close-btn" data-menu-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
@@ -235,31 +82,31 @@
 
           <ul class="navbar-list">
             <li>
-              <a href="./index.html" class="navbar-link active">Home</a>
+              <a href="./home-page.html" class="navbar-link active">होम</a>
             </li>
 
             <li>
-              <a href="movies.html" class="navbar-link">Movie</a>
+              <a href="#" class="navbar-link">मूवी</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Tv Show</a>
+              <a href="#" class="navbar-link">टीवी शो</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Web Series</a>
+              <a href="#" class="navbar-link">वेब सीरीज</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Contact us</a>
+              <a href="#" class="navbar-link">कांटेक</a>
             </li>
 
             <li>
-              <div class="dropdown-mb">
-                <button class="dropbtn">Language</button>
+              <div class="dropdown">
+                <button class="dropbtn">भाषा</button>
                 <div class="dropdown-content">
-                  <a href="/index.html">English</a>
-                  <a href="index_hindi.html">हिंदी</a>
+                  <a href="./home-page.html">English</a>
+                  <a href="./home_hindi.html">हिंदी</a>
                   <a href="#">తెలుగు</a>
                   <a href="#">Francais</a>
                 </div>
@@ -267,8 +114,8 @@
             </li>
 
             <li>
-              <a href="login.html" class="navbar-link">
-                <button class="nav-login">Login</button></a
+              <a href="#" class="navbar-link">
+                <button class="nav-login">लोग इन</button></a
               >
             </li>
           </ul>
@@ -319,7 +166,8 @@
             <div class="hero-content">
               <!-- <p class="hero-subtitle">Moon Knight</p> -->
 
-              <h1 class="h1 hero-title">Nayani <strong>Karthik</strong></h1>
+              <h1 class="h1 hero-title">
+                नयणी <strong>कार्तिक</strong></h1>
 
               <div class="meta-wrapper">
                 <div class="badge-wrapper">
@@ -333,32 +181,31 @@
                 </div>
 
                 <div class="ganre-wrapper">
-                  <a class="genre" href="#">Action-Adventure,<br /></a>
+                  <a class="genre" href="#">एक्शन - एडवेंचर ,<br /></a>
 
-                  <a class="genre" href="#">Superhero</a>
+                  <a class="genre" href="#">सुपरहेरो</a>
                 </div>
 
                 <div class="date-time">
                   <div>
                     <ion-icon name="play"></ion-icon>
 
-                    <time datetime="2022">Season 1<br /></time>
+                    <time datetime="2022">सीजन १<br /></time>
                   </div>
 
                   <div>
                     <ion-icon name="list"></ion-icon>
 
-                    <time datetime="PT128M">6 Episodes</time>
+                    <time datetime="PT128M">६ एपिसोड्स</time>
                   </div>
                 </div>
               </div>
 
-              <a href="/movies/moon_knight.html">
-                <button class="btn btn-primary">
-                  <ion-icon name="play"></ion-icon>
-                  <span>Watch now</span>
-                </button>
-              </a>
+              <button class="btn btn-primary">
+                <ion-icon name="play"></ion-icon>
+
+                <span style="font-size: 16px">वाच नाउ</span>
+              </button>
             </div>
           </div>
         </section>
@@ -373,14 +220,12 @@
               <div class="title-wrapper">
                 <!-- <p class="section-subtitle">Online Streaming</p> -->
 
-                <h2 class="h2 section-title">Upcoming Movies</h2>
+                <h2 class="h2 section-title">अपकमिंग मूवीज</h2>
               </div>
 
               <ul class="filter-list">
                 <li>
-                  <a href="/movies.html"
-                    ><button class="filter-btn">Movies</button></a
-                  >
+                  <button class="filter-btn">Movies</button>
                 </li>
 
                 <li>
@@ -396,7 +241,7 @@
             <ul class="movies-list has-scrollbar">
               <li>
                 <div class="movie-card">
-                  <a href="/movies/thor_love&thunder.html">
+                  <a href="#">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/upcoming-1.png"
@@ -406,8 +251,8 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="/movies/thor_love&thunder.html">
-                      <h3 class="card-title">Thor: Love and Thunder</h3>
+                    <a href="#">
+                      <h3 class="card-title">थॉर : लव एंड थंडर</h3>
                     </a>
 
                     <time datetime="2022">2022</time>
@@ -433,7 +278,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="/movies/doctor-strange-multiverse.html">
+                  <a href="#">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/upcoming-2.png"
@@ -443,9 +288,9 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="/movies/doctor-strange-multiverse.html">
+                    <a href="#">
                       <h3 class="card-title">
-                        Doctor Strange in the Multiverse of Madness
+                        डॉक्टर स्ट्रेंज इन थे मल्टीवर्से ऑफ़ मैडनेस
                       </h3>
                     </a>
 
@@ -472,7 +317,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="#">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/upcoming-3.png"
@@ -509,7 +354,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="#">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/upcoming-4.png"
@@ -548,317 +393,112 @@
         </section>
 
         <!-- 
+        - #SERVICE
+      -->
+
+        <section class="service">
+          <div class="container">
+            <div class="service-banner">
+              <figure>
+                <img
+                  src="./assets/images/banner_cinema.svg"
+                  alt="HD 4k resolution! only $3.99"
+                />
+              </figure>
+            </div>
+
+            <div class="service-content">
+              <p class="service-subtitle">Our Services</p>
+
+              <h2 class="h2 service-title">
+                Download Your Shows Watch Offline.
+              </h2>
+
+              <p class="service-text">
+                Save your favourites easily and always have something to watch.
+              </p>
+              <h2 class="h2 service-title">Watch everywhere.</h2>
+
+              <p class="service-text">
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop, and TV.
+              </p>
+
+              <ul class="service-list">
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="laptop-outline"></ion-icon>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Enjoy on Your TV.</h3>
+
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consecetur adipiscing elit,
+                        sed do eiusmod tempor.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="arrow-down-outline"></ion-icon>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Watch Anytime.</h3>
+
+                      <p class="card-text">
+                        You can now save your favourite movies, series,
+                        television series offline.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
         - #TOP RATED
       -->
 
         <section class="top-rated">
           <div class="container">
-            <div class="wrapper">
-              <!-- filter Items -->
-              <nav>
-                <div class="items">
-                  <span class="item active" data-name="all">All</span>
-                  <span class="item" data-name="bollywood">Bollywood</span>
-                  <span class="item" data-name="tollywood">Tollywood</span>
-                  <span class="item" data-name="hollywood">Hollywood</span>
-                  <span class="item" data-name="kdrama">K-Drama</span>
-                  <span class="item" data-name="anime">Anime</span>
-                </div>
-              </nav>
-              <!-- filter Images -->
-              <div class="gallery">
-                <div class="image" data-name="bollywood">
-                  <span><img src="/assets/images/dangal.jpg" alt="" /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/Brahmastra_poster.jpeg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span><img src="/assets/images/83-Poster.jpg" alt="" /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img
-                      src="/assets/images/Sooryavanshi-Hindi-Poster.jpg"
-                      alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/Dybbuk-Hindi-Poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/Laxmii-Hindi-Poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img
-                      src="/assets/images/Chhalaang-Hindi-Poster.jpg"
-                      alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/Simmba_poster.jpg" alt=""
-                  /></span>
-                </div>
-
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/URI_poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img
-                      src="/assets/images/Bajrangi_Bhaijaan_Poster.jpg"
-                      alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/Sanju_poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/Padmaavat_poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/Mission_Mangal.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img
-                      src="/assets/images/Bhool_Bhulaiyaa_2_film_poster.jpg"
-                      alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/3_idiots_poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img
-                      src="/assets/images/Bajirao_Mastani_poster.jpg"
-                      alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="bollywood">
-                  <span
-                    ><img src="/assets/images/Kesari_poster.jpg" alt=""
-                  /></span>
-                </div>
-
-                <div class="image" data-name="tollywood">
-                  <span
-                    ><img src="/assets/images/Sita_Ramam.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="tollywood">
-                  <span
-                    ><img src="/assets/images/RRR_Poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="tollywood">
-                  <span
-                    ><img src="/assets/images/Major_The_Film.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="tollywood">
-                  <span
-                    ><img src="/assets/images/Cinema_Bandi_poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="tollywood">
-                  <span
-                    ><img src="/assets/images/Jersey_poster.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="tollywood">
-                  <span
-                    ><img src="/assets/images/Arjun_Reddy.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="tollywood">
-                  <span
-                    ><img
-                      src="/assets/images/Pushpa_-_The_Rise_(2021_film).jpg"
-                      alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="tollywood">
-                  <span
-                    ><img src="/assets/images/Akhanda_Poster.jpg" alt=""
-                  /></span>
-                </div>
-
-                <div class="image" data-name="hollywood">
-                  <span
-                    ><img src="/assets/images/X_(2022_film).jpeg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="hollywood">
-                  <span
-                    ><a href="/movies/interstellar.html"
-                      ><img src="/assets/images/movie-7.png" alt="" /></a
-                  ></span>
-                </div>
-                <div class="image" data-name="hollywood">
-                  <span
-                    ><a href="/movies/dune.html"
-                      ><img
-                        src="/assets/images/Dune_(2021_film).jpg"
-                        alt="" /></a
-                  ></span>
-                </div>
-                <div class="image" data-name="hollywood">
-                  <span
-                    ><a href="/movies/texas_chainsaw_massacre.html"
-                      ><img src="/assets/images/texas_chainsae.jpg" alt="" /></a
-                  ></span>
-                </div>
-                <div class="image" data-name="hollywood">
-                  <span
-                    ><img src="/assets/images/Godzilla_vs._Kong.png" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="hollywood">
-                  <span
-                    ><img src="/assets/images/Conjuring_2.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="hollywood">
-                  <span
-                    ><a href="/movies/the_nun.html"
-                      ><img src="/assets/images/TheNunPoster.jpg" alt="" /></a
-                  ></span>
-                </div>
-                <div class="image" data-name="hollywood">
-                  <span
-                    ><img
-                      src="/assets/images/Rampage_teaser_film_poster.jpg"
-                      alt=""
-                  /></span>
-                </div>
-
-                <div class="image" data-name="kdrama">
-                  <span
-                    ><a href="/movies/all_ofus_are_dead.html"
-                      ><img
-                        src="/assets/images/all_of_us_are_dead.jpg"
-                        alt="" /></a
-                  ></span>
-                </div>
-                <div class="image" data-name="kdrama">
-                  <span
-                    ><img src="/assets/images/squid_games.png" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="kdrama">
-                  <span><img src="/assets/images/hellbound.jpg" alt="" /></span>
-                </div>
-                <div class="image" data-name="kdrama">
-                  <span
-                    ><img src="/assets/images/business_proposal.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="kdrama">
-                  <span><img src="/assets/images/vincenzo.jpg" alt="" /></span>
-                </div>
-                <div class="image" data-name="kdrama">
-                  <span><img src="/assets/images/eve.jpg" alt="" /></span>
-                </div>
-                <div class="image" data-name="kdrama">
-                  <span><img src="/assets/images/big_mouth.jpg" alt="" /></span>
-                </div>
-                <div class="image" data-name="kdrama">
-                  <span><img src="/assets/images/why_her.jpg" alt="" /></span>
-                </div>
-                <div class="image" data-name="kdrama">
-                  <span
-                    ><img src="/assets/images/sweet_home.jpg" alt=""
-                  /></span>
-                </div>
-
-                <div class="image" data-name="anime">
-                  <span
-                    ><a href="/movies/naruto_shippuden.html"
-                      ><img
-                        src="https://www.themoviedb.org/t/p/original/csSsO9oXTIpOVxA3xXYbEzd6IKy.jpg"
-                        alt="Naruto Shippuden the Movie: The Will of Fire" /></a
-                  ></span>
-                </div>
-
-                <div class="image" data-name="anime">
-                  <span
-                    ><img src="/assets/images/tokyo_ghoul.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="anime">
-                  <span
-                    ><img src="/assets/images/one_punch_man.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="anime">
-                  <span><img src="/assets/images/overlord.jpg" alt="" /></span>
-                </div>
-                <div class="image" data-name="anime">
-                  <span
-                    ><img src="/assets/images/a_silent_voice.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="anime">
-                  <span
-                    ><img
-                      src="/assets/images/pokemon_secrets_of_junngle.jpg"
-                      alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="anime">
-                  <span
-                    ><img src="/assets/images/howls_moving_castle.jpg" alt=""
-                  /></span>
-                </div>
-                <div class="image" data-name="anime">
-                  <span><img src="/assets/images/bellw.jpg" alt="" /></span>
-                </div>
-              </div>
-            </div>
-            <!-- fullscreen img preview box -->
-            <div class="preview-box">
-              <div class="details">
-                <span class="title"
-                  >Image Category:
-                  <p></p
-                ></span>
-                <span class="icon fas fa-times"></span>
-              </div>
-              <div class="image-box"><img src="" alt="" /></div>
-            </div>
-            <div class="shadow"></div>
-
-            <!-- top rated -->
-
             <p style="font-size: 20px" class="section-subtitle">
               Online Streaming
             </p>
 
             <h2 class="h2 section-title">Top Rated Movies</h2>
+
+            <!-- <ul class="filter-list">
+
+                        <li>
+                            <button class="filter-btn">Movies</button>
+                        </li>
+
+                        <li>
+                            <button class="filter-btn">TV Shows</button>
+                        </li>
+
+                        <li>
+                            <button class="filter-btn">Documentary</button>
+                        </li>
+
+                        <li>
+                            <button class="filter-btn">Sports</button>
+                        </li>
+
+                    </ul> -->
+
             <ul class="movies-list">
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/movie-1.png"
@@ -868,7 +508,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="error404.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">K.G.F: Chapter 2</h3>
                     </a>
 
@@ -895,51 +535,14 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="/movies/guardians_of_galaxy.html">
-                    <figure class="card-banner">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/en/3/33/Guardians_of_the_Galaxy_%28film%29_poster.jpg"
-                        alt="guardians_of_galaxy"
-                      />
-                    </figure>
-                  </a>
-
-                  <div class="title-wrapper">
-                    <a href="/movies/guardians_of_galaxy.html">
-                      <h3 class="card-title">Guardians of the Galaxy</h3>
-                    </a>
-
-                    <time datetime="2014">2014</time>
-                  </div>
-
-                  <div class="card-meta">
-                    <div class="badge badge-outline">HD</div>
-
-                    <div class="duration">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="PT122M">2h 2min</time>
-                    </div>
-
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-
-                      <data>8.0</data>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="movie-card">
-                  <a href="./error404.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img src="./assets/images/movie-2.png" alt="RRR poster" />
                     </figure>
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="error404.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">RRR</h3>
                     </a>
 
@@ -966,7 +569,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/movie-3.png"
@@ -1003,7 +606,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="/movies/spiderman-no-way-home.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/movie-4.png"
@@ -1013,7 +616,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="/movies/spiderman-no-way-home.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">Spider-Man: No Way Home</h3>
                     </a>
 
@@ -1040,7 +643,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="/movies/the-batman.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/movie-5.png"
@@ -1050,7 +653,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="/movies/the-batman.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">The Batman</h3>
                     </a>
 
@@ -1077,7 +680,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/movie-6.png"
@@ -1087,7 +690,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="error404.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">Pushpa: The Rise</h3>
                     </a>
 
@@ -1151,7 +754,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="/movies/avatar-2009.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/movie-8.png"
@@ -1161,7 +764,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="/movies/avatar-2009.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">Avatar</h3>
                     </a>
 
@@ -1190,76 +793,6 @@
         </section>
 
         <!-- 
-        - #SERVICE
-      -->
-
-        <section class="service">
-          <div class="container">
-            <div class="service-banner">
-              <figure>
-                <img
-                  src="./assets/images/banner_cinema.svg"
-                  alt="HD 4k resolution! only $3.99"
-                />
-              </figure>
-            </div>
-
-            <div class="service-content">
-              <p class="service-subtitle">Our Services</p>
-
-              <h2 class="h2 service-title">
-                Download Your Shows Watch Offline.
-              </h2>
-
-              <p class="service-text">
-                Save your favourites easily and always have something to watch.
-              </p>
-              <h2 class="h2 service-title">Watch everywhere.</h2>
-
-              <p class="service-text">
-                Stream unlimited movies and TV shows on your phone, tablet,
-                laptop, and TV.
-              </p>
-
-              <ul class="service-list">
-                <li>
-                  <div class="service-card">
-                    <div class="card-icon">
-                      <ion-icon name="laptop-outline"></ion-icon>
-                    </div>
-
-                    <div class="card-content">
-                      <h3 class="h3 card-title">Enjoy on Your TV.</h3>
-
-                      <p class="card-text">
-                        <!-- Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor. -->
-                      </p>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="service-card">
-                    <div class="card-icon">
-                      <ion-icon name="arrow-down-outline"></ion-icon>
-                    </div>
-
-                    <div class="card-content">
-                      <h3 class="h3 card-title">Watch Anytime.</h3>
-
-                      <p class="card-text">
-                        You can now save your favourite movies, series,
-                        television series offline.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- 
         - #TV SERIES
       -->
 
@@ -1272,7 +805,7 @@
             <ul class="movies-list">
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/series-1.png"
@@ -1282,7 +815,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="error404.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">Moon Knight</h3>
                     </a>
 
@@ -1309,7 +842,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/series-2.png"
@@ -1319,7 +852,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="error404.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">Halo</h3>
                     </a>
 
@@ -1346,7 +879,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/series-3.png"
@@ -1356,7 +889,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="error404.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">Vikings: Valhalla</h3>
                     </a>
 
@@ -1383,7 +916,7 @@
 
               <li>
                 <div class="movie-card">
-                  <a href="error404.html">
+                  <a href="./movie-details.html">
                     <figure class="card-banner">
                       <img
                         src="./assets/images/series-4.png"
@@ -1393,7 +926,7 @@
                   </a>
 
                   <div class="title-wrapper">
-                    <a href="error404.html">
+                    <a href="./movie-details.html">
                       <h3 class="card-title">Money Heist</h3>
                     </a>
 
@@ -1458,7 +991,7 @@
         <div class="container">
           <div class="footer-brand-wrapper">
             <a href="./index.html" class="logo">
-              <img src="./assets/images/cinema.png" alt=" logo" />
+              <img src="./assets/images/cinema.png" alt="Filmlane logo" />
             </a>
 
             <ul class="footer-list">
@@ -1537,17 +1070,15 @@
         </div>
       </div>
 
-      <!--         <div class="footer-bottom">
-            <div class="container">
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2022 <a href="#">Suresh Choudhary</a>. All Rights Reserved
+          </p>
 
-                <p class="copyright">
-                    &copy; 2022 <a href="#">Suresh Choudhary</a>. All Rights Reserved
-                </p>
-
-
-
-            </div>
-        </div> -->
+          <!-- <img src="./assets/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img"> -->
+        </div>
+      </div>
     </footer>
 
     <!-- 
@@ -1562,7 +1093,7 @@
     - custom js link
   -->
     <script src="./assets/js/script.js"></script>
-    <script src="/assets/js/filter_script.js"></script>
+
     <!-- 
     - ionicon link
   -->
